@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <script src="js/script.js"></script>
+    <header>
+        <h1>Yero BMI Calculator </h1>
+    </header>
+    <main>
+        <div class="main-container">
+            <!-- Form Display -->
+            <div class="container-item">
+                <h2>Form BMI</h2>
+                <p>Ideal weight serves multiple purposes in health, wellness, and medical contexts. 
+                   Primarily, it acts as a guideline or target for individuals to aim for to maintain or  achieve 
+                   optimal health such as health risk assessment, prevention of diseases,  promotion of 
+                   overall well-being, guidance for geight management, and encourages healthy  
+                   lifestyle choices. So Yero IBM Calcualtor will tell you about your ideal weight</p>
+                <section class="container-form">
+                    <div>
+                        <label>Age</label><br>
+                        <input type="number" class="form-item">
+                    </div>
+                    <div>
+                        <label>Gender</label><br>
+                        <input type="radio" name="sex" id="sex-male">
+                        <label for="sex-male">Male</label>
+                        <input type="radio" name="sex" id="sex-female">
+                        <label for="sex-female">Female</label>
+                    </div>
+                    <div>
+                        <label>Weight(kg)</label><br>
+                        <input type="number" class="form-item">
+                    </div>
+                    <div>
+                        <label>Height(cm)</label><br>
+                        <input type="number" class="form-item">
+                    </div>
+                    <div>
+                        <button type="button" id="calculate-button">Calculate BMI</button><button type="button">Reset</button>
+                    </div>
+                </section>
+
+                <section>
+                    <p>The Body Mass Index (BMI) calculator is a popular tool used to assess whether a person has a healthy 
+                        body weight for their height. It's widely used by healthcare professionals and individuals alike 
+                        because of its simplicity and the valuable insights it can provide into one's health status. Here's 
+                        why the BMI calculator is considered superior in many contexts:</p>
+                    <ol>
+                        <li>Simplicity and Accessibility</li>
+                        <li>Cost-Effective Screening Tool</li>
+                        <li>Standardization</li>
+                        <li>Risk Assessment for Health Conditions</li>
+                        <li>Epidemiological Research</li>
+                    </ol>
+                </section>
+                
+            </div>
+            <!-- Result Display -->
+            <div class="container-item">
+                <h2>Result</h2>
+                <section class="container-result">
+                    <h4>Your IBM is</h4>
+                    <h1>0</h1>
+                    <h4>Your Overweight</h4>
+                    <button type="button">Download Result</button>
+
+                </section>
+
+                <section>
+                    <p>You are in category overweight. The best way to lose weight is to control the calories in the food 
+                       you consume and exercise. If your BMI is in this category then you are advised to lose weight</p>
+                       <div>
+                        <button type="button" id="consult-button">Consult Nutritionists via App</button><button type="button">Register Online Nutritionists</button>
+                       </div>
+                </section>
+            </div>
+
+        </div>
+
+        <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText"></p>
+        </div></div>
+    </main>
+    <footer></footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
